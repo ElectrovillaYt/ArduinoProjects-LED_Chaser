@@ -1,288 +1,66 @@
-// This code is for Led chaser, connect leds from Digital pin D2 - D11. 
-// Total LEDs 10.                                                        
-// Code made by [IndianElectronics].                                      
-// SUBSCRIBE My bchannel here: www.youtube.com/c/IndianElectronics \\
-
+// This code is for a Led chaser, connect LEDs from Digital pin D2 - D11.
+// Total LEDs 10.
+// Code made by [ElectroVilla].
 // Starting of Programme:
-int LED1 = 2;
-int LED2 = 3;
-int LED3 = 4;
-int LED4 = 5;
-int LED5 = 6;
-int LED6 = 7;
-int LED7 = 8;
-int LED8 = 9;
-int LED9 = 10;
-int LED10 = 11;
+const int LED1 = 2, LED2 = 3, LED3 = 4, LED4 = 5, LED5 = 6, LED6 = 7, LED7 = 8, LED8 = 9, LED9 = 10, LED10 = 11;
 
-void setup(){
-  pinMode(LED1,OUTPUT);
-  pinMode(LED2,OUTPUT);
-  pinMode(LED3,OUTPUT);
-  pinMode(LED4,OUTPUT);
-  pinMode(LED5,OUTPUT);
-  pinMode(LED6,OUTPUT);
-  pinMode(LED7,OUTPUT);
-  pinMode(LED8,OUTPUT);
-  pinMode(LED9,OUTPUT);
-  pinMode(LED10,OUTPUT);
-} 
- 
-void loop(){ 
- //Start...
- //Pattern-1.
- digitalWrite(LED1,HIGH);  //ON (HIGH)
- delay(100);                //OFF (LOW)
- digitalWrite(LED1,LOW);
- delay(100);
- digitalWrite(LED2,HIGH);
- delay(100);
- digitalWrite(LED2,LOW);
- delay(100);
- digitalWrite(LED3,HIGH);
- delay(100);
- digitalWrite(LED3,LOW);
- delay(100);
- digitalWrite(LED4,HIGH);
- delay(100);
- digitalWrite(LED4,LOW);
- delay(100); 
- digitalWrite(LED5,HIGH);
- delay(100);
- digitalWrite(LED5,LOW);
- delay(100);
- digitalWrite(LED6,HIGH);
- delay(100);
- digitalWrite(LED6,LOW);
- delay(100);
- digitalWrite(LED7,HIGH);
- delay(100);
- digitalWrite(LED7,LOW);
- delay(100);
- digitalWrite(LED8,HIGH);
- delay(100);
- digitalWrite(LED8,LOW);
- delay(100); 
- digitalWrite(LED9,HIGH);
- delay(100);
- digitalWrite(LED9,LOW);
- delay(100);
- digitalWrite(LED10,HIGH);
- delay(100);
- digitalWrite(LED10,LOW);
- delay(10);
 
- digitalWrite(LED1,HIGH); 
- delay(100);                
- digitalWrite(LED1,LOW);
- delay(100);
- digitalWrite(LED2,HIGH);
- delay(100);
- digitalWrite(LED2,LOW);
- delay(100);
- digitalWrite(LED3,HIGH);
- delay(100);
- digitalWrite(LED3,LOW);
- delay(100);
- digitalWrite(LED4,HIGH);
- delay(100);
- digitalWrite(LED4,LOW);
- delay(100); 
- digitalWrite(LED5,HIGH);
- delay(100);
- digitalWrite(LED5,LOW);
- delay(100);
- digitalWrite(LED6,HIGH);
- delay(100);
- digitalWrite(LED6,LOW);
- delay(100);
- digitalWrite(LED7,HIGH);
- delay(100);
- digitalWrite(LED7,LOW);
- delay(100);
- digitalWrite(LED8,HIGH);
- delay(100);
- digitalWrite(LED8,LOW);
- delay(100); 
- digitalWrite(LED9,HIGH);
- delay(100);
- digitalWrite(LED9,LOW);
- delay(100);
- digitalWrite(LED10,HIGH);
- delay(100);
- digitalWrite(LED10,LOW);
- delay(10);
-                 
-//=========================//Pattern-2.
-digitalWrite(LED1,HIGH);
- delay(100);
-digitalWrite(LED2,HIGH);
- delay(100);
-digitalWrite(LED3,HIGH);
- delay(100);
-digitalWrite(LED4,HIGH);
- delay(100);
-digitalWrite(LED5,HIGH);
- delay(100);
-digitalWrite(LED6,HIGH);
- delay(100);
-digitalWrite(LED7,HIGH);
- delay(100);
-digitalWrite(LED8,HIGH);
- delay(100);
-digitalWrite(LED9,HIGH);
- delay(100);
-digitalWrite(LED10,HIGH);
- delay(100);
+int nums_of_LED[] = {
+  LED1,
+  LED2,
+  LED3,
+  LED4,
+  LED5,
+  LED6,
+  LED7,
+  LED8,
+  LED9,
+  LED10,
+};
 
-digitalWrite(LED1,LOW);
- delay(100);
- digitalWrite(LED2,LOW);
- delay(100);
-digitalWrite(LED3,LOW);
- delay(100);
-digitalWrite(LED4,LOW);
- delay(100);
-digitalWrite(LED5,LOW);
- delay(100);
-digitalWrite(LED6,LOW);
- delay(100);
-digitalWrite(LED7,LOW);
- delay(100);
-digitalWrite(LED8,LOW);
- delay(100);
-digitalWrite(LED9,LOW);
- delay(100);
-digitalWrite(LED10,LOW);
- delay(100);
-digitalWrite(LED1,HIGH);
- delay(100);
-digitalWrite(LED2,HIGH);
- delay(100);
-digitalWrite(LED3,HIGH);
- delay(100);
-digitalWrite(LED4,HIGH);
- delay(100);
-digitalWrite(LED5,HIGH);
- delay(100);
-digitalWrite(LED6,HIGH);
- delay(100);
-digitalWrite(LED7,HIGH);
- delay(100);
-digitalWrite(LED8,HIGH);
- delay(100);
-digitalWrite(LED9,HIGH);
- delay(100);
-digitalWrite(LED10,HIGH);
- delay(100);
+void setup() {
+  pinMode(LED1, OUTPUT);
+  pinMode(LED2, OUTPUT);
+  pinMode(LED3, OUTPUT);
+  pinMode(LED4, OUTPUT);
+  pinMode(LED5, OUTPUT);
+  pinMode(LED6, OUTPUT);
+  pinMode(LED7, OUTPUT);
+  pinMode(LED8, OUTPUT);
+  pinMode(LED9, OUTPUT);
+  pinMode(LED10, OUTPUT);
 
-digitalWrite(LED1,LOW);
- delay(100);
- digitalWrite(LED2,LOW);
- delay(100);
-digitalWrite(LED3,LOW);
- delay(100);
-digitalWrite(LED4,LOW);
- delay(100);
-digitalWrite(LED5,LOW);
- delay(100);
-digitalWrite(LED6,LOW);
- delay(100);
-digitalWrite(LED7,LOW);
- delay(100);
-digitalWrite(LED8,LOW);
- delay(100);
-digitalWrite(LED9,LOW);
- delay(100);
-digitalWrite(LED10,LOW);
- delay(100);
- digitalWrite(LED1,HIGH);
- delay(100);
-digitalWrite(LED2,HIGH);
- delay(100);
-digitalWrite(LED3,HIGH);
- delay(100);
-digitalWrite(LED4,HIGH);
- delay(100);
-digitalWrite(LED5,HIGH);
- delay(100);
-digitalWrite(LED6,HIGH);
- delay(100);
-digitalWrite(LED7,HIGH);
- delay(100);
-digitalWrite(LED8,HIGH);
- delay(100);
-digitalWrite(LED9,HIGH);
- delay(100);
-digitalWrite(LED10,HIGH);
- delay(100);
-
-digitalWrite(LED1,LOW);
- delay(100);
- digitalWrite(LED2,LOW);
- delay(100);
-digitalWrite(LED3,LOW);
- delay(100);
-digitalWrite(LED4,LOW);
- delay(100);
-digitalWrite(LED5,LOW);
- delay(100);
-digitalWrite(LED6,LOW);
- delay(100);
-digitalWrite(LED7,LOW);
- delay(100);
-digitalWrite(LED8,LOW);
- delay(100);
-digitalWrite(LED9,LOW);
- delay(100);
-digitalWrite(LED10,LOW);
- delay(100);
- digitalWrite(LED1,HIGH);
- delay(100);
-digitalWrite(LED2,HIGH);
- delay(100);
-digitalWrite(LED3,HIGH);
- delay(100);
-digitalWrite(LED4,HIGH);
- delay(100);
-digitalWrite(LED5,HIGH);
- delay(100);
-digitalWrite(LED6,HIGH);
- delay(100);
-digitalWrite(LED7,HIGH);
- delay(100);
-digitalWrite(LED8,HIGH);
- delay(100);
-digitalWrite(LED9,HIGH);
- delay(100);
-digitalWrite(LED10,HIGH);
- delay(100);
-
-digitalWrite(LED1,LOW);
- delay(100);
- digitalWrite(LED2,LOW);
- delay(100);
-digitalWrite(LED3,LOW);
- delay(100);
-digitalWrite(LED4,LOW);
- delay(100);
-digitalWrite(LED5,LOW);
- delay(100);
-digitalWrite(LED6,LOW);
- delay(100);
-digitalWrite(LED7,LOW);
- delay(100);
-digitalWrite(LED8,LOW);
- delay(100);
-digitalWrite(LED9,LOW);
- delay(100);
-digitalWrite(LED10,LOW);
- delay(100);
+  delay(2000);  // wait for 2 seconds
 }
 
+void loop() {
+  //Start...
+  //Pattern-1.
+  for (int i = 0; i < nums_of_LED; i++) { pattern1(); }
+  //pattern-2
+  for (int i = 0; i < nums_of_LED; i++) { pattern2(); }
+  delay(250);
+}
 
+const int time_period = 100;
+void pattern1() {
+  for (int i = 0; i < nums_of_LED; i++) {
+    digitalWrite(nums_of_LED[i], HIGH);
+    delay(time_period);
+    digitalWrite(nums_of_LED[i], LOW);
+  }
+  delay(10);
+}
 
-
-
- 
- 
+void pattern2() {
+  delay(10);
+  for (int i = 0; i < nums_of_LED; i++) {
+    digitalWrite(nums_of_LED[i], HIGH);
+    delay(time_period);
+  }
+  delay(10);
+  for (int i = 0; i < nums_of_LED; i++) {
+    digitalWrite(nums_of_LED[i], LOW);
+    delay(time_period);
+  }
+}
