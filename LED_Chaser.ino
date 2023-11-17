@@ -33,15 +33,6 @@ void setup() {
   delay(2000);  // wait for 2 seconds
 }
 
-void loop() {
-  //Start...
-  //Pattern-1.
-  for (int i = 0; i < nums_of_LED; i++) { pattern1(); }
-  //pattern-2
-  for (int i = 0; i < nums_of_LED; i++) { pattern2(); }
-  delay(250);
-}
-
 const int time_period = 100;
 void pattern1() {
   for (int i = 0; i < nums_of_LED; i++) {
@@ -64,3 +55,13 @@ void pattern2() {
     delay(time_period);
   }
 }
+
+void loop() {
+  //Start...
+  //Pattern-1.
+  for (int i = 0; i < nums_of_LED; i++) { pattern1(); }
+  //pattern-2
+  for (int i = 0; i < nums_of_LED; i++) { pattern2(); }
+  delay(250);
+}
+
